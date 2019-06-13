@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacterList, { Character } from './CharacterList';
+
 import './App.css';
 
 class App extends Component {
