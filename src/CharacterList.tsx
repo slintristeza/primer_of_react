@@ -9,7 +9,7 @@ export interface Character {
 }
 
 interface CharacterListProps {
-  school: string;
+  school?: string;
   characters: Character[];
 }
 
@@ -19,7 +19,7 @@ class CharacterList extends Component<CharacterListProps> {
 
     return (
       <>
-        <Header as="h2">{school}</Header>
+        {school ? <Header as="h2">{school}</Header> : <> </>}
         <Item.Group>
           {characters.map(c => (
             <Item key={c.id}>
