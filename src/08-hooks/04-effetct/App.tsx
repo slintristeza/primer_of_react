@@ -17,9 +17,9 @@ const App: FC = () => {
   };
 
   useEffect(() => {
-    const timeId = setInterval(tick, 1000);
+    const timerId = setInterval(tick, 1000);
 
-    return () => clearInterval(timeId);
+    return () => clearInterval(timerId);
   }, []);
 
   return (
