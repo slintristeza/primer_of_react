@@ -31,7 +31,7 @@ const Counter: FC<CounterProps> = ({
         </Button>
       </div>
       <div className="fluid-button">
-        <Button fluid color="grey" onClick={() => add(10)}>
+        <Button fluid color="grey" onClick={() => add(100)}>
           +10
         </Button>
       </div>
