@@ -26,7 +26,7 @@ const Members: FC<MembersProps> = ({
       <HtmlTitle title={title} />
       <div className="Members" data-test="users">
         <Header as="h2">{title}</Header>
-        { isLoading ? (
+        {isLoading ? (
           <Spinner />
         ) : (
           <Card.Group>
